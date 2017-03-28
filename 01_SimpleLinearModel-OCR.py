@@ -1,11 +1,7 @@
 import tensorflow as tf
 import numpy as np
-
 from util import Util
 u = Util()
-
-print(tf.__version__)
-
 from tensorflow.examples.tutorials.mnist import input_data
 data = input_data.read_data_sets("data/MNIST/", one_hot=True)
 

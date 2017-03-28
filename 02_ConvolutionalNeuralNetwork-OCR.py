@@ -1,16 +1,12 @@
 from IPython.display import Image
-Image('images/02_flowchart.png')
-Image('images/02_convolution.png')
-
 import tensorflow as tf
 import numpy as np
 import time
 from datetime import timedelta
-
 from util import Util
 u = Util()
+from tensorflow.examples.tutorials.mnist import input_data
 
-print(tf.__version__)
 
 # Convolutional Layer 1.
 filter_size1 = 5          # Convolution filters are 5 x 5 pixels.
@@ -23,7 +19,7 @@ num_filters2 = 36         # There are 36 of these filters.
 # Fully-connected layer.
 fc_size = 128             # Number of neurons in fully-connected layer.
 
-from tensorflow.examples.tutorials.mnist import input_data
+
 data = input_data.read_data_sets('data/MNIST/', one_hot=True)
 
 print("Size of")

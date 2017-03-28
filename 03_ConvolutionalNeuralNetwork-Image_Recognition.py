@@ -12,6 +12,7 @@ from util import Util
 u = Util()
 import prettytensor as pt
 import cifar10 as dataset
+from cifar10 import img_size, num_channels, num_classes
 # We use PrettyTensor to simplify Neural Network construction.
 
 # Set the path for storing the data-set on your computer.
@@ -28,7 +29,7 @@ print("Size of")
 print("- Training-set:\t\t{}".format(len(images_train)))
 print("- Test-set:\t\t{}".format(len(images_test)))
 
-from cifar10 import img_size, num_channels, num_classes
+
 img_size_cropped = 24
 def plot_images(images, cls_true, cls_pred=None, smooth=True):
     u.plot_images_2(images=images, cls_true=cls_true, class_names=class_names, cls_pred=cls_pred, smooth=smooth)
