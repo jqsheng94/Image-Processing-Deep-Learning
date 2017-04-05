@@ -18,4 +18,4 @@ image_path = os.path.join(inception.data_dir, 'cat.jpg')
 
 classify(image_path)
 
-classify(image_path="imagesForClassification/rome.jpg")
+classify(image_path="inception/bunny3.jpg")
